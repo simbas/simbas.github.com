@@ -1,0 +1,168 @@
+@import "lib/please.less";
+
+@base: darken(red,20%);
+@darken: darken(@base, 10%);
+@hdarken: darken(@base, 25%);
+@lighten: lighten(@base, 10%);
+@hlighten: lighten(@base, 25%);
+@complement: spin(@base, 180);
+
+html {
+	font-family: 'Open Sans', sans-serif; 
+	background: url("../img/noise.png"), @base;
+	font-size: 14px;
+}
+h1, h2, nav {
+	margin: 5px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+h1{
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+h2{
+	font-size: 1.20em;
+	line-height: 1.20em;
+}
+h3{
+	font-size: 1.15em;
+	line-height: 1.15em;
+	margin: 1.15em 0;
+	margin-bottom: 0em;
+	font-weight: normal;
+	color: @darken;
+}
+h4{
+	font-weight: normal;
+	font-size: 1.10em;
+	line-height: 1.10em;
+	margin: 1.10em 0;
+	margin-bottom: 0.2em;
+}
+p {
+	margin: 0.5em 1em;
+}
+a {
+	text-decoration: none;
+	color: @base;
+}
+a:hover {
+	text-decoration: underline;
+}
+br {
+    line-height: 1.25em;
+}
+code, kbd, pre, samp {
+	font-family: 'Open Sans', sans-serif;
+}
+ol, ul {
+	margin: 0 0.5em;
+	padding: 0;
+	padding-left: 20px;
+}
+li{
+	margin-bottom: 10px;
+	&:last-of-type {
+		margin-bottom: 0px;
+	}
+	&:first-letter {
+		font-size: 1.05em;
+		color: @base;
+		text-transform: capitalize;
+	}
+	p {
+		margin: 0;
+	}
+}
+header {
+	overflow: hidden;
+	color: white;
+}
+body > header {
+	> * {
+		width: 100%;
+		display: block;
+		vertical-align: middle;
+		margin: 0px;
+		padding: 0px;
+	}
+	img {
+		margin:0 auto;
+		max-width: 100px;
+	}
+	#title {
+		text-align: center;
+	}
+}
+
+div[role="main"] {
+	display: block;
+	height: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	article {
+		position: relative;
+		padding: 0px;
+		header {
+			background: url("http://handlebarsjs.com/images/noise.png"), @base;
+			.transform(skew(-22deg));
+			position: relative;
+			padding: 5px;
+			width: auto;
+			z-index: 1;
+			position: absolute;
+			top: -30px;
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-right: 10px;
+			left: -20px;
+			> * {
+				display: block;
+				.transform(skew(22deg));	
+			}
+		}
+		div.body{
+			padding: 5px;
+			padding-bottom: 20px;
+			padding-top: 40px;
+			.transform(skew(0, 1deg));
+			margin-top: 25px;
+			margin-bottom: 35px;
+			background: white;
+			> * {
+				.transform(skew(0, -1deg));
+			}
+			h3:first-letter {
+				color: @base;
+				text-transform: capitalize;
+			}
+			p:first-letter {
+				font-size: 1.05em;
+				color: @base;
+				text-transform: capitalize;
+			}
+			section {
+				> *:first-child {
+					margin-top: 0;
+				}
+				pre {
+					margin: 0 10px;
+					padding: 0px 5px;
+					border-top: 1px @base solid;
+					border-bottom: 1px @base solid;
+				}
+			}
+			aside{
+				font-style: italic;
+				margin: 0;
+			}
+			footer{
+				font-style: italic;
+				ul{
+					padding: 0;
+				}
+			}
+		}
+	} 	
+}
