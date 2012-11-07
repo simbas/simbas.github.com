@@ -1,3 +1,0 @@
-[submodule "less/lib"]
-	path = less/lib
-	url = git@github.com:simbas/please-less.git
