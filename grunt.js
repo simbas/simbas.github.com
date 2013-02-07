@@ -2,26 +2,17 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		mincss: {
 			all: {
-				src: ["css/lib/normalize.css","less/style.css"],
-				dest: "css/min.css"
-			}
-		},
-		less: {
-			all: {
-				files: {
-					"less/style.css": "less/style.less"
-				}
+				src: ["stylesheets/foundation.css","stylesheets/foundicons.css","stylesheets/app.css"],
+				dest: "stylesheets/min.css"
 			}
 		},
 		clean: {
-			before: {
-				src:['less/style.css','css/min.css']
-			},
-			after: {
-				src:['less/style.css']
+			all: {
+				src:['stylesheets/min.css']
 			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib');
-	grunt.registerTask('build', 'clean:before less mincss clean:after');
+	grunt.registerTask('build', 'clean mincss');
+	grunt.registerTask('default', 'build');
 };

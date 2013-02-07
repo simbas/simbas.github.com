@@ -1,204 +1,196 @@
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html lang="fr">
 <head>
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Open+Sans:400,700:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
 <title>Simon Basset</title>
 <meta name="description" content="Simon Basset, Ingénieur Etude et Développement Mobile, addict des technologies web et mobile (JavaScript, HTML5, PhoneGap / Cordova, etc.).">
-<meta name="viewport" content="width=device-width">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="stylesheet" href="css/min.css">
-<link rel="apple-touch-icon-precomposed" href="img/icon-57.png" /> 
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icon-72.png" /> 
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon-114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/icon-144.png" />
+<link rel="stylesheet" href="stylesheets/min.css">
 </head>
 <body>
-<header>
-<h1 id="title">Simon Basset</h1>
-<img src="data:image/png;base64,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">
-</header>
-<div role="main">
-	<article>
-	<header>
-	<div>
-		<h2>Général</h2>
+<div class="twelve columns">
+	<div class="row">
+		<h1 class="no-box">Simon Basset</h1>
+		<h2 class="subheader no-box"><small>My awesome resume</small></h2>
 	</div>
-	</header>
-	<div class="body">
-		<section role="main">
-		<h3>Simon Basset</h3>
-		<p>
-			Age : 22 ans
-		</p>
-		<p>
-			Contact : <a href="mailto:contact@simonbasset.me">contact@simonbasset.me</a>
-		</p>
-		<p>
-			Github : <a href="https://github.com/simbas">simbas</a>
-		</p>
-		</section>
-	</div>
+	<hr />
+</div>
+<div class="twelve columns">
+	<article class="row">
+	<h3><a href="#">Général</a></h3>
+	<p>
+		<i class="foundicon-calendar"></i> 1989<br />
+		<a href="mailto:contact@simonbasset.me"><i class="foundicon-mail"></i> contact@simonbasset.me</a><br />
+		<a href="https://github.com/simbas"><i class="foundicon-cloud"></i> simbas</a>
+	</p>
 	</article>
-	<article>
-	<header>
-	<div>
-		<h2>Expériences</h2>
-	</div>
-	</header>
-	<div class="body">
-		<section role="main">
-		<h3>IED Mobile, Smile (Levallois-Perret)</h3>
-		<ul>
-			<li>
-			<h4>GDF Suez</h4>
-			<p>
-				Réalisation d'une application mobile cross-plateform et d'une application web mobile.<br>
-				Plateformes : Android, iOS (iPhone et iPad).<br>
-				Technologies : JavaScript, jQuery, cordova, HTML5, CSS3, Less, Java et Maven.
-			</p>
-			</li>
-			<li>
-			<h4>Fédération Nationale des Mutualités Françaises</h4>
-			<p>
-				Conception Ergonomique et technique, spécification et développement d'un site mobile et tablette (responsive web design).<br>
-				Plateformes : Android, iOS, Windows Phone, BlackBerry.<br>
-				Technologies : JavaScript, jQuery, HTML5, CSS3, Less, PHP.
-			</p>
-			</li>
-			<li>
-			<h4>WebApp SNCF Séminaires</h4>
-			<p>
-				Développement d'un prototype d'application de gestion de séminaires.<br>
-				Plateformes : Android, iOS, Windows Phone, IE Desktop.<br>
-				Technologies : HippoCMS, JavaScript, jQuery, HTML5, CSS3.
-			</p>
-			</li>
-		</ul>
-		</section>
-	</div>
+	<hr />
+	<article class="row">
+	<h3><a href="#smile" id='smile'>IED Mobile, Smile</a></h3>
+	<h4>AXA Banque</h4>
+	<p>
+		Réalisation d'une application mobile cross-plateform et d'une application web mobile.
+	</p>
+	<ul class='disc'>
+		<li>Plateformes : Android, BlackBerry, iOS (iPhone et iPad)</li>
+		<li>Technologies : JavaScript, Cordova, HTML5, CSS3</li>
+	</ul>
+	<h4>GDF Suez</h4>
+	<p>
+		Réalisation d'une application mobile cross-plateform et d'une application web mobile.
+	</p>
+	<ul class='disc'>
+		<li>Plateformes : Android, iOS (iPhone et iPad)</li>
+		<li>Technologies : JavaScript, jQuery, Cordova, HTML5, CSS3, Less, Java et Maven</li>
+	</ul>
+	<h4>Fédération Nationale des Mutualités Françaises</h4>
+	<p>
+		 Conception Ergonomique et technique, spécification et développement d'un site mobile et tablette (responsive web design).
+	</p>
+	<ul class='disc'>
+		<li>Plateformes : Android, iOS, Windows Phone, BlackBerry</li>
+		<li>Technologies : JavaScript, jQuery, HTML5, CSS3, Less, PHP</li>
+	</ul>
+	<h4>WebApp SNCF Séminaires</h4>
+	<p>
+		 Développement d'un prototype d'application de gestion de séminaires.
+	</p>
+	<ul class='disc'>
+		<li>Plateformes : Android, iOS, Windows Phone, IE Desktop</li>
+		<li>Technologies : HippoCMS, JavaScript, jQuery, HTML5, CSS3</li>
+	</ul>
 	</article>
-	<article>
-	<header>
-	<div>
-		<h2>Stages et projets</h2>
-	</div>
-	</header>
-	<div class="body">
-		<section role="main">
-		<h3>Stage Ingénieur Mobile, Smile (Levallois-Perret)</h3>
-		<p>
-			Avant-ventes mobiles (étude, proof of concept, chiffrage, rédaction, présentation), prototypages mobiles (HTML5, CSS3, JavaScript, jQuery, PhoneGap, Objective-C, Java):<br>
-			POC magazines enrichis, POC reniflage sur iPad, POC application e-commerce, POC liseuse PDF, etc.
-		</p>
-		<h3>Stage Technicien Mobile, Atome Communication (Vienne)</h3>
-		<p>
-			Développement d'une application multi-plateforme (iOS et android) via Titanium:<br>
-			Lecture de QRCode, Géolocalisation et carte, Réalité Augmentée, Ajax et gestion des sessions, Webservices ASP.
-		</p>
-		<h3>Educatif de tir, Gendarmerie Nationale</h3>
-		<p>
-			Responsable Qualité (certification ISO-9001), développeur Java.
-		</p>
-		</section>
-	</div>
+	<hr />
+	<article class="row">
+	<h3><a href="#intership" id='intership'>Stages et projets</a></h3>
+	<h4>Stage Ingénieur Mobile, Smile</h4>
+	<p>
+		Avant-ventes mobiles (étude, proof of concept, chiffrage, rédaction, présentation), prototypages mobiles (HTML5, CSS3, JavaScript, jQuery, PhoneGap, Objective-C, Java):
+	</p>
+	<ul class='disc'>
+		<li>Magazines enrichis (POC)</li>
+		<li>Reniflage sur iPad de la consommation de media (POC)</li>
+		<li>Application e-commerce (POC)</li>
+		<li>Liseuse PDF (POC)</li>
+	</ul>
+	<h4>Stage Technicien Mobile, Atome Communication</h4>
+	<p>
+		Développement d'une application multi-plateforme (iOS et android) via Titanium:
+	</p>
+	<ul class='disc'>
+		<li>Lecture de QRCode</li>
+		<li>Géolocalisation et carte</li>
+		<li>Réalité Augmentée</li>
+		<li>Ajax et gestion des sessions</li>
+		<li>Webservices ASP</li>
+	</ul>
+	<h4>Educatif de tir, Gendarmerie Nationale</h4>
+	<p>
+		 Responsable Qualité (certification ISO-9001), développeur Java.
+	</p>
 	</article>
-	<article>
-	<header>
-	<div>
-		<h2>Formation</h2>
-	</div>
-	</header>
-	<div class="body">
-		<section role="main">
-		<h3>Cycle Ingénieur</h3>
-		<p>
-			Institut Nationale des Sciences Appliquées (INSA) de Rouen. Architecture des Systèmes d'Information (ASI).
-		</p>
-		<h3>Cycle Préparatoire</h3>
-		<p>
-			Institut Nationale des Sciences Appliquées (INSA) de Rouen. Sciences et Technologies Pour l'Ingénieur (STPI).
-		</p>
-		</section>
-	</div>
+	<hr />
+	<article class="row">
+	<h3><a href="#training" id='training'>Formation</a></h3>
+	<h4>Cycle Ingénieur</h4>
+	<p>
+		 Institut Nationale des Sciences Appliquées (INSA) de Rouen. Architecture des Systèmes d'Information (ASI).
+	</p>
+	<h4>Cycle Préparatoire</h4>
+	<p>
+		 Institut Nationale des Sciences Appliquées (INSA) de Rouen. Sciences et Technologies Pour l'Ingénieur (STPI).
+	</p>
 	</article>
-	<article>
-	<header>
-	<div>
-		<h2>Compétences</h2>
-	</div>
-	</header>
-	<div class="body">
-		<section role="main">
-		<h3>Mobile &amp; Web</h3>
-		<p>
-			PhoneGap/Cordova, Titanium, Sencha Touch, HTML5, CSS3, JavaScript.
-		</p>
-		<h3>Client-side templating</h3>
-		<p>
-			Handlebars, Mustache.
-		</p>
-		<h3>Serveur</h3>
-		<p>
-			Node.js, Express, Java, Maven, Hibernate.
-		</p>
-		<h3>Base de données</h3>
-		<p>
-			MongoDB, WebSQL, MySQL.
-		</p>
-		<h3>Autres langages</h3>
-		<p>
-			C, Ruby.
-		</p>
-		<h3>Outils</h3>
-		<p>
-			Grunt, Gradle, Less, Stylus, svn, git, npm, Brackets, Eclipse, Xcode.
-		</p>
-		<h3>Qualité</h3>
-		<p>
-			Jenkins, Sonar, jslint, jshint, yuidoc.
-		</p>
-		<h3>Bureautique</h3>
-		<p>
-			LaTeX, GIMP, Excel, Word, Powerpoint.
-		</p>
-		<h3>OS</h3>
-		<p>
-			Mac OSX, Linux, BSD (openBSD).
-		</p>
-		</section>
-	</div>
-	</article>
-	<article>
-	<header>
-	<div>
-		<h2>Langues</h2>
-	</div>
-	</header>
-	<div class="body">
-		<section role="main">
-		<h3>Anglais</h3>
-		<p>
-			Anglais international et technique courant, TOEIC : 900.
-		</p>
-		</section>
-	</div>
+	<hr />
+	<article class="row">
+	<h3><a href="#skill" id='skill'>Compétences</a></h3>
+	<table class="twelve">
+	<tbody>
+	<tr>
+		<td>
+			<b>Mobile &amp; Web</b>
+		</td>
+		<td>
+			PhoneGap / Cordova, Web Mobile, HTML5, CSS3, JavaScript, Titanium, Sencha Touch
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Client-side templating</b>
+		</td>
+		<td>
+			Handlebars, Mustache, Underscore
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Serveur</b>
+		</td>
+		<td>
+			Node.js, Express
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Base de données</b>
+		</td>
+		<td>
+			MongoDB, WebSQL
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Autres langages</b>
+		</td>
+		<td>
+			Java, C, Ruby
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Outils</b>
+		</td>
+		<td>
+			Grunt, Less, svn, git, npm, Brackets, Xcode, Eclipse
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Qualité</b>
+		</td>
+		<td>
+			Jenkins, Sonar, jslint, jshint, yuidoc
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>Bureautique</b>
+		</td>
+		<td>
+			LaTeX, GIMP, Excel, Word, Powerpoint
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<b>OS</b>
+		</td>
+		<td>
+			Mac OSX, Linux, BSD (openBSD)
+		</td>
+	</tr>
+	</tbody>
+	</table>
 	</article>
 </div>
+<footer>
+<div class="twelve columns">
+	<hr />
+	<div class="six columns">
+		<p>
+			&copy; Copyright no one at all.
+		</p>
+	</div>
+</div>
+</footer>
 </body>
 </html>
