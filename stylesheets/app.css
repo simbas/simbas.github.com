@@ -6,3 +6,9 @@
 p {
 	margin-bottom: 10px;
 }
+.anaglyph * {
+	text-shadow: -0.2em 0 red, 0.2em 0 cyan;
+}
+.anaglyph .button {
+	box-shadow:  -0.2em 0 red, 0.2em 0 cyan;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" id='html'>
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
@@ -185,12 +185,25 @@
 <footer>
 <div class="twelve columns">
 	<hr />
-	<div class="six columns">
-		<p>
+		<a class="radius button" href="#" id='anaglyph'>Go 3D!</a>
+		<span class='right'>
 			&copy; Copyright no one at all.
-		</p>
-	</div>
+		</span>
 </div>
 </footer>
+<script>
+	document.getElementById('anaglyph').addEventListener('click', function (e) {
+		e.preventDefault();
+		var clazz = document.getElementById('html').className;
+			
+		if (clazz.indexOf('anaglyph') > -1) {
+			document.getElementById('html').className =  "";
+			this.className = "radius button";
+		} else {
+			document.getElementById('html').className =  "anaglyph";
+			this.className = "radius button alert";
+		}
+	});
+</script>
 </body>
 </html>
