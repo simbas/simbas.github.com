@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         mincss: {
             all: {
-                src: ["stylesheets/foundation.css", "stylesheets/foundicons.css", "stylesheets/app.css"],
+                src: ["stylesheets/foundation.css", "stylesheets/font-awesome.css", "stylesheets/app.css"],
                 dest: "stylesheets/min.css"
             }
         },
