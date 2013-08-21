@@ -31,6 +31,12 @@ p {
     color: #6f6f6f;
 }
 
+@media screen {
+    .show-on-print {
+        display: none;
+    }
+}
+
 @media print {
     .hide-on-print {
         display: none !important;
