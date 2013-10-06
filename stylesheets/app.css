@@ -31,6 +31,12 @@ p {
     color: #6f6f6f;
 }
 
+.icon-mobile-phone,
+.icon-tablet,
+.icon-desktop {
+    font-size: 2em;
+}
+
 @media screen {
     .show-on-print {
         display: none;
