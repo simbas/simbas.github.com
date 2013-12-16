@@ -37,6 +37,13 @@ p {
     font-size: 2em;
 }
 
+
+
+.thumbnail {
+    width: 75px;
+    height: 100px;
+}
+
 @media screen {
     .show-on-print {
         display: none;
@@ -49,5 +56,8 @@ p {
     }
     .break-on-print {
         page-break-inside: avoid;
+    }
+    .thumbnail__container {
+        display: none !important;
     }
 }

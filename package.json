@@ -1,8 +1,0 @@
-{
-  "name": "simonbasset.me",
-  "version": "0.0.1",
-  "devDependencies": {
-    "grunt-contrib": "~0.3.0",
-    "grunt": "~0.3.17"
-  }
-}
