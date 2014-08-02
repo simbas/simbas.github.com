@@ -1,0 +1,190 @@
+@mixin title() {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+$title-subtitle-gap: 5px;
+
+$primary-color: #2ba6cb;
+$primary-color-alt: #2795b6;
+$contact-title-font-size: 38px;
+$division-title-font-size: 26px;
+$experience-title-font-size: 22px;
+
+$subtitle-font-size: 16px;
+$secondary-color: #6f6f6f;
+
+@font-face {
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?4299151');
+  src: url('./font/fontello.eot?4299151#iefix') format('embedded-opentype'),
+  url('./font/fontello.woff?4299151') format('woff'),
+  url('./font/fontello.ttf?4299151') format('truetype'),
+  url('./font/fontello.svg?4299151#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+
+.division [class^="icon-"]:before, .division [class*=" icon-"]:before {
+  font-size: 2em;
+  margin: 0;
+}
+
+.icon-github:before {
+  content: '\e800';
+}
+
+.icon-mail-alt:before {
+  content: '\e801';
+}
+
+.icon-calendar:before {
+  content: '\e802';
+}
+
+.icon-laptop:before {
+  content: '\e803';
+}
+
+.icon-tablet:before {
+  content: '\e804';
+}
+
+.icon-mobile:before {
+  content: '\e805';
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color-alt;
+  }
+}
+
+.title {
+  @include title();
+}
+
+.title--with-subtitle {
+  margin-bottom: $title-subtitle-gap;
+}
+
+.subtitle {
+  @extend .title;
+  font-size: $subtitle-font-size;
+  color: $secondary-color;
+  margin-top: $title-subtitle-gap;
+}
+
+.contact {
+  &__title {
+    @extend .title;
+    font-size: $contact-title-font-size;
+
+    border: solid #ddd;
+    border-width: 0 0 1px;
+    margin: 0 0 22px;
+    padding: 0 0 22px;
+  }
+  &__title--with-subtitle {
+    @extend .contact__title, .title--with-subtitle;
+  }
+  &__information {
+    display: block;
+    margin: 3px 0;
+  }
+}
+
+.division {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  margin: 30px 0 30px;
+
+  &__title {
+    @extend .title;
+    font-size: $division-title-font-size;
+    color: $primary-color;
+  }
+  &__title--with-subtitle {
+    @extend .division__title, .title--with-subtitle;
+  }
+  &__subtitle {
+    @extend .subtitle;
+  }
+  &__description {
+  }
+}
+
+.experience {
+  margin: 28px 0;
+  &__title {
+    @extend .title;
+    font-size: $experience-title-font-size;
+  }
+  &__title--with-subtitle {
+    @extend .experience__title, .title--with-subtitle;
+  }
+  &__subtitle {
+    @extend .subtitle;
+  }
+  &__description {
+  }
+  &__list-title {
+    font-weight: bold;
+  }
+  &__list {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: 1em 0;
+    line-height: 1.6;
+  }
+}
+
+.matrix {
+  border-radius: 3px;
+  margin: 0 0 18px;
+  border: 1px solid #ddd;
+  width: 100%;
+
+  tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+
+  td {
+    padding: 10px;
+    vertical-align: top;
+  }
+  td:first-of-type {
+    font-weight: bold;
+  }
+}
