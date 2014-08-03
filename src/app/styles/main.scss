@@ -91,6 +91,15 @@ a {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .main {
+    min-width: 768px;
+    max-width: 100%;
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
 .title {
   @include title();
 }
@@ -147,6 +156,7 @@ a {
 
 .experience {
   margin: 28px 0;
+
   &__title {
     @extend .title;
     font-size: $experience-title-font-size;
@@ -159,15 +169,22 @@ a {
   }
   &__description {
   }
-  &__list-title {
-    font-weight: bold;
-  }
-  &__list {
-    list-style-type: disc;
-    list-style-position: outside;
-    margin: 1em 0;
-    line-height: 1.6;
-  }
+}
+
+.experience--first {
+  @extend .experience;
+  margin-top: 14px;
+}
+
+
+.list-title {
+  font-weight: bold;
+}
+.list {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin: 1em 0;
+  line-height: 1.6;
 }
 
 .matrix {
