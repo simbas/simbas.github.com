@@ -3126,3 +3126,23 @@
 				}
 
 	}
+
+
+@media print {
+	header {
+			margin: 10px;
+			padding: 10px;
+	}
+
+	footer {
+		page-break-inside: avoid;
+	}
+
+	h2, h3 {
+		font-size: 16px;
+		margin: 5px 0;
+	}
+	.copyright {
+		display: none;
+	}
+}

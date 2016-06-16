@@ -347,7 +347,16 @@ header h1 {
     position: absolute;
     width: 100%;
     left: 122%;
-    top: 21px;
+    top: 0;
+    font-size: 16px;
+    font-size: 1rem;
+    float: left;
+  }
+  .cd-timeline-content .cd-more-info {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 50px;
     font-size: 16px;
     font-size: 1rem;
     float: left;
@@ -366,6 +375,11 @@ header h1 {
     float: right;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-more-info {
     left: auto;
     right: 122%;
     text-align: right;
@@ -529,9 +543,11 @@ header h1 {
   background: #F06292 !important;
   width: 70%;
 }
-.dd.cordva {
-  background: #FFA000 !important;width: 75%;
+.dd.cordova {
+  background: #FFA000 !important;
+  width: 75%;
 }
 .dd.tooling {
-  background: #303F9F !important;width: 80%;
+  background: #303F9F !important;
+  width: 80%;
 }
