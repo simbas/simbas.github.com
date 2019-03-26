@@ -545,6 +545,9 @@ header h1 {
 }
 
 @media print {
+    body, h1, h2, h3, h4, h5, h6 {
+        color: black;
+    }
     .dd, .dt {
         -webkit-print-color-adjust: exact;
     }
@@ -569,39 +572,40 @@ header h1 {
 
 .dd.html {
     background: #F44336 !important;
-    width: 85%;
 }
 
 .dd.backbone {
     background: #2196F3 !important;
-    width: 80%;
 }
 
 .dd.angular {
     background: #FFCA28 !important;
-    width: 75%;
 }
 
 .dd.react {
     background: #F06292 !important;
-    width: 70%;
 }
+
 .dd.go {
     background: #30f071 !important;
-    width: 70%;
+}
+
+.dd.java {
+    background: #ab3cf0 !important;
 }
 
 .dd.cordova {
     background: #FFA000 !important;
-    width: 75%;
 }
 
 .dd.tooling {
     background: #303F9F !important;
-    width: 80%;
 }
 
 .dd.devops {
     background: #9f6107 !important;
-    width: 80%;
+}
+
+.dt h4 {
+    margin: 0.5em 0 0 0;
 }
