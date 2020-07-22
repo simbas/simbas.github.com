@@ -551,6 +551,12 @@ header h1 {
     .dd, .dt {
         -webkit-print-color-adjust: exact;
     }
+
+    #footer {
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .dt:after {
@@ -608,4 +614,17 @@ header h1 {
 
 .dt h4 {
     margin: 0.5em 0 0 0;
+}
+
+.cd-timeline-content p {
+    line-height: 1.4em;
+}
+
+.cd-timeline-content p:last-of-type {
+    margin: 0 0 .5em 0;
+}
+
+.cd-more-info i {
+    line-height: 1.2em;
+    display: inline-block;
 }
