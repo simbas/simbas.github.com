@@ -588,6 +588,10 @@ header h1 {
     background: #FFCA28 !important;
 }
 
+.dd.vue {
+    background: #42b883 !important;
+}
+
 .dd.react {
     background: #F06292 !important;
 }
