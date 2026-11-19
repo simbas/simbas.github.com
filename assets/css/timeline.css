@@ -616,6 +616,18 @@ header h1 {
     background: #9f6107 !important;
 }
 
+.dd.agentic {
+    background: #7C4DFF !important;
+}
+
+.dd.llmops {
+    background: #00ACC1 !important;
+}
+
+.dd.python {
+    background: #3776AB !important;
+}
+
 .dt h4 {
     margin: 0.5em 0 0 0;
 }
